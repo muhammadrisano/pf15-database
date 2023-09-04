@@ -107,7 +107,7 @@ SELECT id, email, fullname, phone FROM users ORDER BY fullname ASC;
 
 -- WHERE
 
-SELECT * FROM users WHERE id <= 4;
+SELECT * FROM users WHERE id <= 4 AND id > 2;
 
 SELECT * FROM users WHERE phone = '08XX' ORDER BY fullname ASC;
 
@@ -117,4 +117,7 @@ SELECT * FROM users WHERE id in(1,5);
 -- SEARCH
 -- WHERE  = ganti dengan LIKE dan %
 
+-- LIKE = > melihat huruf capital / tidaknya
+
+-- ILIKE -> menghiraukan penulisan capital / huruf kecil
 SELECT * FROM users WHERE fullname ILIKE '%PER%';
